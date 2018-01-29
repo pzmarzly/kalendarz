@@ -1,7 +1,7 @@
 link(rel="stylesheet" href="vendor/bootstrap.min.css" inline)
 link(rel="stylesheet" href="style.css" inline)
 #main
-  .container-fluid(v-for="i in (Math.ceil((date1 - date0) / (3600 * 24)) + 1)")
+  .container-fluid(v-for="i in (Math.round((date1 - date0) / (3600 * 24)) + 1)")
     h3 {{ wysw(i) }}
     .row
       .col-xs-2.
