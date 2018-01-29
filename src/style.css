@@ -9,14 +9,20 @@ body.loaded {
 
 .container-fluid {
     page-break-after: always;
+    margin-left: 50px;
+}
+
+.container-fluid:nth-child(even) {
+    margin-left: 0 !important;
+    margin-right: 50px;
 }
 
 .container-fluid .row:nth-child(2) {
-    background-color: #999 !important;
+    background-color: #aaa !important;
 }
 
 .container-fluid .row:nth-child(even) {
-    background-color: #bbb;
+    background-color: #ddd;
 }
 
 .container-fluid .row .col-xs-2 {
