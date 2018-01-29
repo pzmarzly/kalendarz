@@ -1,0 +1,25 @@
+body {
+    display: none;
+    text-align: center;
+}
+
+body.loaded {
+    display: initial;
+}
+
+.container-fluid {
+    page-break-after: always;
+}
+
+.container-fluid .row:nth-child(2) {
+    background-color: #999 !important;
+}
+
+.container-fluid .row:nth-child(even) {
+    background-color: #bbb;
+}
+
+.container-fluid .row .col-xs-2 {
+    border: 1px solid black;
+    padding: 6px 0;
+}

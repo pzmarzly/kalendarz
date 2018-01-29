@@ -1,0 +1,29 @@
+link(rel="stylesheet" href="vendor/bootstrap.min.css" inline)
+link(rel="stylesheet" href="style.css" inline)
+#main
+  .container-fluid(v-for="i in (((date1 - date0) / (3600 * 24)) + 1)")
+    h3 {{ wysw(i) }}
+    .row
+      .col-xs-2.
+        Godzina
+      .col-xs-2.
+        1
+      .col-xs-2.
+        2
+      .col-xs-2.
+        3A
+      .col-xs-2.
+        3B
+      .col-xs-2.
+        4
+    .row(v-for="d in (((godz1 - godz0) * 2) + 1)")
+      .col-xs-2.
+        {{ godz(d) }}
+      .col-xs-2 &nbsp;
+      .col-xs-2 &nbsp;
+      .col-xs-2 &nbsp;
+      .col-xs-2 &nbsp;
+      .col-xs-2 &nbsp;
+script(src="vendor/vue.min.js" inline)
+script(src="vendor/moment-with-locales.min.js" inline)
+script(src="script.js" inline)
