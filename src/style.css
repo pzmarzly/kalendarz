@@ -18,7 +18,7 @@ body.loaded {
 }
 
 .container-fluid .row:nth-child(2) {
-    background-color: #aaa !important;
+    background-color: #ddd !important;
 }
 
 .container-fluid .row .col-xs-2 {
