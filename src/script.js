@@ -18,7 +18,11 @@ new Vue({
         wysw(i) {
             let m = moment.unix(data0);
             m.add((i - 1), 'd');
-            return m.format("dddd, Do MMM YYYY");
+            let ret = "";
+            if (m.day() == 0) ret += "<span class='red'>";
+            ret += m.format("dddd, Do MMM YYYY");
+            if (m.day() == 0) ret += "</span>";
+            return ret;
         },
         godz(i) {
             let m = moment('2000 1', 'Y DDD');
