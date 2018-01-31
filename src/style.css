@@ -21,10 +21,6 @@ body.loaded {
     background-color: #aaa !important;
 }
 
-.container-fluid .row:nth-child(even) {
-    background-color: #ddd;
-}
-
 .container-fluid .row .col-xs-2 {
     border: 1px solid black;
     padding: 6px 0;
