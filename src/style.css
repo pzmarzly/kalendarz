@@ -19,6 +19,8 @@ body.loaded {
 
 .container-fluid .row:nth-child(2) {
     background-color: #ddd !important;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
 .container-fluid .row .col-xs-2 {
