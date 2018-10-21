@@ -9,4 +9,4 @@ gulp.task('build', () => {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', ['build']);
+gulp.task('default', gulp.parallel('build'));
