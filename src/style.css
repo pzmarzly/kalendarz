@@ -23,9 +23,14 @@ body.loaded {
     font-weight: bold;
 }
 
-.container-fluid .row .col-xs-2 {
+.container-fluid .row .col-xs-2,
+.container-fluid .row .col-xs-1 {
     border: 1px solid black;
     padding: 6px 0;
+}
+
+.container-fluid .row .col-xs-11 {
+    padding: 0;
 }
 
 .red {
