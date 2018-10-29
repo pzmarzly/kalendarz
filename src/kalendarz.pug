@@ -4,48 +4,49 @@ link(rel="stylesheet" href="style.css" inline)
   .container-fluid(v-for="i in (Math.round((date1 - date0) / (3600 * 24)) + 1)")
     h3(v-html="wysw(i)")
     .row
-      .col-xs-1.
-        Godzina
-      .col-xs-11
-        .col-xs-2.
-          1
-        .col-xs-2.
-          2
-        .col-xs-2.
-          3
-        .col-xs-2.
-          4
-        .col-xs-2.
-          5
-        .col-xs-2.
-          6
+      .godz.
+        Godz
+      .col.
+        1
+      .col.
+        2
+      .col.
+        3
+      .col.
+        4
+      .col.
+        5
+      .col.
+        6
+      .col.
+        7
     .row
-      .col-xs-1 &nbsp;
-      .col-xs-11
-        .col-xs-2 &nbsp;
-        .col-xs-2 &nbsp;
-        .col-xs-2 &nbsp;
-        .col-xs-2 &nbsp;
-        .col-xs-2 &nbsp;
-        .col-xs-2 &nbsp;
+      .godz &nbsp;
+      .col &nbsp;
+      .col &nbsp;
+      .col &nbsp;
+      .col &nbsp;
+      .col &nbsp;
+      .col &nbsp;
+      .col &nbsp;
     .row
-      .col-xs-1 &nbsp;
-      .col-xs-11
-        .col-xs-2 &nbsp;
-        .col-xs-2 &nbsp;
-        .col-xs-2 &nbsp;
-        .col-xs-2 &nbsp;
-        .col-xs-2 &nbsp;
-        .col-xs-2 &nbsp;
+      .godz &nbsp;
+      .col &nbsp;
+      .col &nbsp;
+      .col &nbsp;
+      .col &nbsp;
+      .col &nbsp;
+      .col &nbsp;
+      .col &nbsp;
     .row(v-for="d in (((godz1 - godz0) * 2) + 1)")
-      .col-xs-1 {{ godz(d) }}
-      .col-xs-11
-        .col-xs-2 &nbsp;
-        .col-xs-2 &nbsp;
-        .col-xs-2 &nbsp;
-        .col-xs-2 &nbsp;
-        .col-xs-2 &nbsp;
-        .col-xs-2 &nbsp;
+      .godz {{ godz(d) }}
+      .col &nbsp;
+      .col &nbsp;
+      .col &nbsp;
+      .col &nbsp;
+      .col &nbsp;
+      .col &nbsp;
+      .col &nbsp;
 script(src="../node_modules/vue/dist/vue.min.js" inline)
 script(src="../node_modules/moment/min/moment-with-locales.min.js" inline)
 script(src="script.js" inline)

@@ -36,20 +36,25 @@ body.loaded {
     font-weight: bold;
 }
 
-.container-fluid .row .col-xs-2,
-.container-fluid .row .col-xs-1 {
+.container-fluid .row .col,
+.container-fluid .row .godz {
+    display: inline-block;
     border: 1px solid black;
     padding: 6px 0;
 }
 
-.container-fluid .row .col-xs-11 {
-    padding: 0;
+.container-fluid .row .col {
+    width: 13.5%;
+}
+
+.container-fluid .row .godz {
+    width: 5.5%;
 }
 
 .red {
     color: red;
 }
-</style><div id="main"><div class="container-fluid" v-for="i in (Math.round((date1 - date0) / (3600 * 24)) + 1)"><h3 v-html="wysw(i)"></h3><div class="row"><div class="col-xs-1">Godzina</div><div class="col-xs-11"><div class="col-xs-2">1</div><div class="col-xs-2">2</div><div class="col-xs-2">3</div><div class="col-xs-2">4</div><div class="col-xs-2">5</div><div class="col-xs-2">6</div></div></div><div class="row"><div class="col-xs-1">&nbsp;</div><div class="col-xs-11"><div class="col-xs-2">&nbsp;</div><div class="col-xs-2">&nbsp;</div><div class="col-xs-2">&nbsp;</div><div class="col-xs-2">&nbsp;</div><div class="col-xs-2">&nbsp;</div><div class="col-xs-2">&nbsp;</div></div></div><div class="row"><div class="col-xs-1">&nbsp;</div><div class="col-xs-11"><div class="col-xs-2">&nbsp;</div><div class="col-xs-2">&nbsp;</div><div class="col-xs-2">&nbsp;</div><div class="col-xs-2">&nbsp;</div><div class="col-xs-2">&nbsp;</div><div class="col-xs-2">&nbsp;</div></div></div><div class="row" v-for="d in (((godz1 - godz0) * 2) + 1)"><div class="col-xs-1">{{ godz(d) }}</div><div class="col-xs-11"><div class="col-xs-2">&nbsp;</div><div class="col-xs-2">&nbsp;</div><div class="col-xs-2">&nbsp;</div><div class="col-xs-2">&nbsp;</div><div class="col-xs-2">&nbsp;</div><div class="col-xs-2">&nbsp;</div></div></div></div></div><script>/*!
+</style><div id="main"><div class="container-fluid" v-for="i in (Math.round((date1 - date0) / (3600 * 24)) + 1)"><h3 v-html="wysw(i)"></h3><div class="row"><div class="godz">Godz</div><div class="col">1</div><div class="col">2</div><div class="col">3</div><div class="col">4</div><div class="col">5</div><div class="col">6</div><div class="col">7</div></div><div class="row"><div class="godz">&nbsp;</div><div class="col">&nbsp;</div><div class="col">&nbsp;</div><div class="col">&nbsp;</div><div class="col">&nbsp;</div><div class="col">&nbsp;</div><div class="col">&nbsp;</div><div class="col">&nbsp;</div></div><div class="row"><div class="godz">&nbsp;</div><div class="col">&nbsp;</div><div class="col">&nbsp;</div><div class="col">&nbsp;</div><div class="col">&nbsp;</div><div class="col">&nbsp;</div><div class="col">&nbsp;</div><div class="col">&nbsp;</div></div><div class="row" v-for="d in (((godz1 - godz0) * 2) + 1)"><div class="godz">{{ godz(d) }}</div><div class="col">&nbsp;</div><div class="col">&nbsp;</div><div class="col">&nbsp;</div><div class="col">&nbsp;</div><div class="col">&nbsp;</div><div class="col">&nbsp;</div><div class="col">&nbsp;</div></div></div></div><script>/*!
  * Vue.js v2.5.13
  * (c) 2014-2017 Evan You
  * Released under the MIT License.

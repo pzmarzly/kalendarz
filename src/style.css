@@ -23,14 +23,19 @@ body.loaded {
     font-weight: bold;
 }
 
-.container-fluid .row .col-xs-2,
-.container-fluid .row .col-xs-1 {
+.container-fluid .row .col,
+.container-fluid .row .godz {
+    display: inline-block;
     border: 1px solid black;
     padding: 6px 0;
 }
 
-.container-fluid .row .col-xs-11 {
-    padding: 0;
+.container-fluid .row .col {
+    width: 13.5%;
+}
+
+.container-fluid .row .godz {
+    width: 5.5%;
 }
 
 .red {
