@@ -1,15 +1,19 @@
-# Generator kalendarza/terminarza / Calendar generator
+# Calendar generator
 
-Używa polskego formatu dat. / Uses Polish date format.
+Uses Polish date format.
 
-## Użycie / Usage
+## Usage
 
-Pobierz `dist/kalendarz.html`. / Download `dist/kalendarz.html`.
+Download `dist/kalendarz.html`. Open it, enter start and end dates.
 
-## Budowanie / Building
+Then in Chrome hit Ctrl+P. Enable Background Graphics.
+
+You may also want to set Margins to None.
+
+## Building
 
 ```bash
-npm install -g gulp
 npm install
-gulp
+./node_modules/.bin/gulp
+xdg-open dist/kalendarz.html
 ```
