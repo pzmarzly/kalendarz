@@ -4,22 +4,13 @@ link(rel="stylesheet" href="style.css" inline)
   .container-fluid(v-for="i in (Math.round((date1 - date0) / (3600 * 24)) + 1)")
     h3(v-html="wysw(i)")
     .row
-      .godz.
-        Godz
-      .col.
-        1
-      .col.
-        2
-      .col.
-        3
-      .col.
-        4
-      .col.
-        5
-      .col.
-        6
-      .col.
-        7
+      .godz Godz
+      .col 1
+      .col 2
+      .col 3
+      .col 4
+      .col 5
+      .col 6
     .row
       .godz &nbsp;
       .col &nbsp;
@@ -28,10 +19,8 @@ link(rel="stylesheet" href="style.css" inline)
       .col &nbsp;
       .col &nbsp;
       .col &nbsp;
-      .col &nbsp;
     .row
       .godz &nbsp;
-      .col &nbsp;
       .col &nbsp;
       .col &nbsp;
       .col &nbsp;
@@ -40,7 +29,6 @@ link(rel="stylesheet" href="style.css" inline)
       .col &nbsp;
     .row(v-for="d in (((godz1 - godz0) * 2) + 1)")
       .godz {{ godz(d) }}
-      .col &nbsp;
       .col &nbsp;
       .col &nbsp;
       .col &nbsp;
